@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">C_Eats</string>
+    <string name="chickfila">Chickfila</string>
+    <string name="subway">Subway</string>
+    <string name="milkandhoney">MilkAndHoney</string>
+    <string name="starbucks">Starbucks</string>
+    <string name="available_funds_100">Available Funds: 100</string>
+    <string name="backbutton"><![CDATA[<--]]></string>
+    <string name="flextab">FlexTab</string>
+    <string name="vsudiningimage">vsudiningImage</string>
+    <string name="flex">Flex</string>
+</resources>
