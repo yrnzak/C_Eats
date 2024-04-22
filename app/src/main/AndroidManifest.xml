@@ -13,6 +13,12 @@
         android:theme="@style/Theme.C_Eats"
         tools:targetApi="31">
         <activity
+            android:name=".MilkAndHoneyMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StarBucksMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".StatBucks"
             android:exported="false" />
         <activity
