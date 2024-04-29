@@ -13,25 +13,16 @@
         android:theme="@style/Theme.C_Eats"
         tools:targetApi="31">
         <activity
+            android:name=".Flex"
+            android:exported="false" />
+        <activity
+            android:name=".StarbucksMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".MilkAndHoneyMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".StarBucksMenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".StatBucks"
-            android:exported="false" />
-        <activity
-            android:name=".MilkAndHoney"
-            android:exported="false" />
-        <activity
             android:name=".SubwayMenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MilkandHoney"
-            android:exported="false" />
-        <activity
-            android:name=".StarBucks"
             android:exported="false" />
         <activity
             android:name=".ChickfilaMenuActivity"

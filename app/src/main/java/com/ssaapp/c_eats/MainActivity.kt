@@ -1,12 +1,10 @@
 package com.ssaapp.c_eats
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-
 import android.widget.Button
-import android.widget.ImageView
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,40 +15,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val chickfilaButton = findViewById<Button>(R.id.button1)
-        val subwayButton = findViewById<Button>(R.id.button2)
-        val starbucksButton = findViewById<Button>(R.id.button3)
-        val milkHoneyButton = findViewById<Button>(R.id.button4)
-        val menuImageView: ImageView = findViewById(R.id.menuImageView)
+        val chickfilaButton: Button = findViewById(R.id.button1)
+        val subwayButton: Button = findViewById(R.id.button2)
+        val milkAndHoneyButton: Button = findViewById(R.id.button3)
+        val starbucksButton: Button = findViewById(R.id.button4)
 
         chickfilaButton.setOnClickListener {
-            // Set the image resource for Chickfila menu
-
-            menuImageView.setImageResource(R.drawable.chickfilam)
-            // Make the menu image visible
-            menuImageView.visibility = View.VISIBLE
+            val intent = Intent(this, ChickfilaMenuActivity::class.java)
+            startActivity(intent)
         }
 
+
         subwayButton.setOnClickListener {
-            // Set the image resource for Subway menu
-            menuImageView.setImageResource(R.drawable.subwaymenu)
-            // Make the menu image visible
-            menuImageView.visibility = View.VISIBLE
+            val intent = Intent(this, SubwayMenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        milkAndHoneyButton.setOnClickListener {
+            val intent = Intent(this, MilkAndHoneyMenuActivity::class.java)
+            startActivity(intent)
         }
 
         starbucksButton.setOnClickListener {
-            // Set the image resource for Starbucks menu
-            menuImageView.setImageResource(R.drawable.starbucksmenu)
-            // Make the menu image visible
-            menuImageView.visibility = View.VISIBLE
+            val intent = Intent(this, StarbucksMenuActivity::class.java)
+            startActivity(intent)
         }
 
-        milkHoneyButton.setOnClickListener {
-            // Set the image resource for Milk & Honey menu
-            menuImageView.setImageResource(R.drawable.milkandhoneymenu)
-            // Make the menu image visible
-            menuImageView.visibility = View.VISIBLE
-        }
+
+
+
 
 
 
@@ -59,6 +52,12 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+
+
+
+
+
 
 
 

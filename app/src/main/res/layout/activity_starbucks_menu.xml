@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MilkAndHoneyMenuActivity">
+    tools:context=".StarbucksMenuActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,24 +19,24 @@
 
             <TextView
                 android:id="@+id/mondayHeaderLabel"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="start|center_vertical"
                 android:padding="16dp"
-                android:text="Milk And Honey Menu"
+                android:text="StarBucks Menu"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/mondayArrow"
                 android:layout_width="wrap_content"
-                android:layout_height="400dp"
+                android:layout_height="240dp"
                 android:layout_gravity="end|center_vertical"
                 android:paddingStart="8dp"
                 android:paddingTop="8dp"
                 android:paddingEnd="16dp"
-                android:src="@drawable/milkandhoneymenu"
+                android:src="@drawable/starbucksmenu"
                 android:visibility="visible" />
         </LinearLayout>
 
@@ -45,6 +45,8 @@
 
 
     </ScrollView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
